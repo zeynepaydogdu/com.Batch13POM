@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="grup calistirma">
+    <test name="Regression1">
+        <groups> <!-- birinci kisim burasidirbu kisimin vazifesi hangi gruplarin calisacagini belirlemek-->
+            <run>
+                <exclude name="mini_regression"  />
+                <include name="smoke"  />
+            </run>
+        </groups>
+
+
+        <packages>  <!--bu kisim bize nerede arayacagimi calistirilmasini istedigimi soroyluyor-->
+            <package name="tests.day16"></package>
+            <package name="tests.day18"></package>
+
+
+        </packages>
+
+
+        <!--birinci kismi ne yapacagi, ikinci kismi nerden alacagi
+        ustteki neler calissin veya calismasın alttaki o runlar nerede yolu gosteriyoz
+        include calisacak exclude calismayacak-->
+
+
+
+
+    </test>
+</suite>

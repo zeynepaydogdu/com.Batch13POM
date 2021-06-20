@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="mini regression">
+    <test name="mini regression">
+        <!--burada yazdigimiz test ile test methotlari farkli seylerdir.
+        Test: bir veya daha fazla class/package/methot/group dan olusan
+        bir butundur  ama onemli olan hiyerarsidir once paket sonra clas ve methot sanirim-->
+
+        <packages>
+            <package name="tests.day17"></package>
+        </packages>
+
+        <classes>
+            <class name="smokeTest.NegatifLoginTest"></class>
+            <class name="tests.day19ExcelAutomation.ReadExcel">
+                <methods>
+                    <include name="readExcel2"></include><!--clasin icine methot yazilabiliyr-->
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
